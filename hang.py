@@ -1,10 +1,10 @@
-#first i have to say, i didn't develope this all by myself. I tried, but with the "display_hangman" function i needed help.
+#I followed steps and tutorials to develop this hang-man game! 
 import random
 from words import word_list
 
 def get_word(word_list):
     word = random.choice(word_list)
-    return word.upper()
+    return word.upper() #Words will be convered to uppercase 
 
 
 def play(word):
@@ -18,8 +18,8 @@ def play(word):
     print(word_completion)
     print("\n")
     while not guessed and tries > 0:
-        guess = input("Plese enter a word to guess the country: ").upper()
-        if len(guess) == 1 and guess.isalpha():
+        guess = input("Plese enter a letter to guess the country: ").upper()
+        if len(guess) == 1 and guess.isalpha(): #only letter from the alphabet
             if guess in guessed_letters:
                 print("you already tried", guess, "!")
             elif guess not in word:
@@ -52,9 +52,9 @@ def play(word):
         print(word_completion)
         print("\n")
     if guessed:
-        print("Good Job, you guessed the word!")
+        print("Good Job, you guessed the country!")
     else:
-        print("I'm sorry, but you ran out of tries. The word was " + word + ". Maybe next time!")
+        print("I'm sorry, but you ran out of tries. The country was " + word + ". Dont give up!")
 
 
 
