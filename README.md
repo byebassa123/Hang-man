@@ -1,6 +1,8 @@
 # Overview
 
-A simple pyton code that reflects the game hang-pan. 
+- A simple hangman game in python that allows user input and it also shows a visual output of hangman along with the country.
+
+- This games focuses on countires throught the word! By playing this game it is intented to improve our awarness of other countries.
 
 I 
 
