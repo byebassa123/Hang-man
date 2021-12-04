@@ -1,4 +1,4 @@
-#I followed steps and tutorials to develop this hang-man game! 
+#I followed steps and tutorials to develop this hang-man game with some twist to it! 
 import random
 from words import word_list
 
